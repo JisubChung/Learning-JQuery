@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>Learning jQuery</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+
+  <style>
+
+  #circle {
+    width:200px;
+    height:200px;
+    background-color:green;
+    border-radius:100px;
+  }
+
+  .square {
+    width:200px;
+    height:200px;
+    background-color:red;
+    margin-top:10px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <p>This is some text</p>
+
+  <button id="fade">Fade Text</button>
+
+  <button id="fadeIN">Fade Text IN</button>
+
+  <script>
+
+  $("#fade").click(function() {
+
+    $("p").fadeOut("slow", function() {
+
+      alert("Fade is done");
+
+    });
+
+  });
+
+  $("#fadeIN").click(function() {
+
+    $("p").fadeIn();
+
+  });
+
+  </script>
+
+</body>
+</html>
